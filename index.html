@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Generador de contenido</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mt-4 p-5 bg-primary text-white rounded">
+        <h1>Crea tu página de contenido</h1>
+        <p>Lorem ipsum...</p>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Título</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="nuevoParrafo()"
+              >Párrafo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Imagen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Enlace</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="imprimir()">Imprimir</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <textarea name="" id="texto" rows="8"></textarea>
+          </div>
+          <div class="row">
+            <input type="file" id="imagen" />
+          </div>
+          <div class="card" id="contenido"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/contenido.js"></script>
+
+  </body>
+</html>
